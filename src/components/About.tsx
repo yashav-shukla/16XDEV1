@@ -12,7 +12,7 @@ const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const finalValues = {
-    projects: 150,
+    projects: 15,
     commits: 10000,
     years: 2 ,
     clients: 10
