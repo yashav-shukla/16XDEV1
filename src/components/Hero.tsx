@@ -67,7 +67,7 @@ const Hero = () => {
     {/* Lighting Logo */}
     <img 
       src="BLACK_HOGA1.png" 
-      alt="Lighting Logo" 
+      alt="16XDEV Logo" 
       className="h-12 w-auto object-contain"
     />            
 
