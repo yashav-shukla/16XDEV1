@@ -12,10 +12,10 @@ const About = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const finalValues = {
-    projects: 50,
+    projects: 150,
     commits: 10000,
-    years: 5,
-    clients: 20
+    years: 2 ,
+    clients: 10
   };
 
   useEffect(() => {
