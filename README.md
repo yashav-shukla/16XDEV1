@@ -4,7 +4,7 @@
   <img src="public/logo.png" alt="16XDEV Logo" width="180" />
 </p>
 
-<h1 align="center">⚡ 16XDEV</h1>
+<h1 align="center">⚡ 16XDEV        </h1>
 
 <p align="center">
   A modern, production-ready landing page template built with <b>Vite 5</b>, <b>React 18</b>, <b>TypeScript</b>, and <b>Tailwind CSS 3</b>.  
