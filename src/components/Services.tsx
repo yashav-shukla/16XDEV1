@@ -30,7 +30,7 @@ const Services = () => {
         'Performance Optimization',
         'SEO & Analytics Setup'
       ],
-      price: 'From $2,500',
+      price: 'From ₹2,500',
       deliveryTime: '2-4 weeks',
       gradient: 'from-red-500 to-red-600'
     },
@@ -48,7 +48,7 @@ const Services = () => {
         'App Store Optimization',
         'Analytics & Crash Reporting'
       ],
-      price: 'From $3,500',
+      price: 'From ₹3,500',
       deliveryTime: '3-6 weeks',
       gradient: 'from-red-600 to-red-700'
     },
@@ -66,7 +66,7 @@ const Services = () => {
         'Usability Testing',
         'Design System Creation'
       ],
-      price: 'From $1,500',
+      price: 'From ₹1,500',
       deliveryTime: '1-3 weeks',
       gradient: 'from-red-400 to-red-500'
     },
@@ -84,7 +84,7 @@ const Services = () => {
         'Rate Limiting & Security',
         'Documentation & Testing'
       ],
-      price: 'From $1,200',
+      price: 'From ₹1,200',
       deliveryTime: '1-2 weeks',
       gradient: 'from-red-700 to-red-800'
     }
