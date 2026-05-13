@@ -149,28 +149,29 @@ const Services = () => {
               <div className="absolute inset-0 bg-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-xl"></div>
               
               <div className="relative p-8">
-                {/* Service Icon & Header */}
-                <div className="flex items-start justify-between mb-6">
-                  <div className="flex items-center space-x-4">
-                    <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                {/* Service Icon & Header — FIX: stack on mobile, row on sm+ */}
+                <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-6">
+                  {/* Left: icon + title */}
+                  <div className="flex items-center space-x-4 min-w-0">
+                    <div className={`w-16 h-16 shrink-0 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <div>
-                      <h3 className="text-2xl font-black text-white group-hover:text-red-400 transition-colors">
+                    <div className="min-w-0">
+                      <h3 className="text-2xl font-black text-white group-hover:text-red-400 transition-colors leading-tight">
                         {service.title}
                       </h3>
-                      <p className="text-red-400 font-semibold">
+                      <p className="text-red-400 font-semibold whitespace-nowrap">
                         {service.subtitle}
                       </p>
                     </div>
                   </div>
                   
-                  {/* Price Tag */}
-                  <div className="text-right">
-                    <div className="text-2xl font-black text-white mb-1">
+                  {/* Right: price + delivery — FIX: left-aligned on mobile, right on sm+ */}
+                  <div className="sm:text-right shrink-0">
+                    <div className="text-2xl font-black text-white mb-1 whitespace-nowrap">
                       {service.price}
                     </div>
-                    <div className="flex items-center text-gray-400 text-sm">
+                    <div className="flex items-center sm:justify-end text-gray-400 text-sm">
                       <Clock className="w-4 h-4 mr-1" />
                       {service.deliveryTime}
                     </div>
